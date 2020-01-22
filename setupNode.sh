@@ -14,8 +14,3 @@ echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm' >> /hom
 nvm alias default 12.14.1
 nvm install 12.14.1
 nvm use 12.14.1
-
-echo "Setting up simple HTTP server" 
-mkdir /var/www/ && cd /var/www/ 
-curl -o- https://raw.githubusercontent.com/nocquidant/userdata/master/index.js
-node index.js
