@@ -11,7 +11,7 @@ const PORT = 3000;
 function incoming(req, res) {
     res.setHeader('Content-Type', 'application/json');
     switch (req.url) {
-        case '/ping': {
+        case '/': {
             if (req.method === 'GET') {
                 res.end(JSON.stringify({ msg: 'pong' }));
             }
